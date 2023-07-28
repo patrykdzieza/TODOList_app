@@ -1,0 +1,26 @@
+body {
+    background-color: #fafafa;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+  }
+  h1 {
+    margin: 0;
+  }
+  
+  input {
+    background: none;
+  
+    border: none;
+  }
+  input:focus {
+    outline: none;
+  }
+  ul, li{
+    list-style: none;
+    font-style: normal;
+    margin:0;
+  }
+  

@@ -15,6 +15,38 @@
   </head>
 
   <body>
-    
+    <div class="app-container">
+      <section class="header-container">
+        <div class="header">
+          <h1 class="header-text">TODO APP</h1>
+          <span class="header-text--decorative">by Paprika</span>
+        </div>
+        <form class="new-task-container">
+          <input type="text" class="new-task__input-field" />
+          <button class="new-task__add-button">Dodaj</button>
+        </form>
+      </section>
+      <section class="task-list-container">
+        <h1 class="task-list-header">Twoja lista zadań</h1>
+        <ul class="task-list">
+          <li class="task-list__item--active">
+            <p class="task-paragraph--active">Przykładowe dodane zadanie do wykonania</p>
+            <ul class="task-controls">
+              <li class="task-controls__item--active"></li>
+              <li class="task-controls__item--active"></li>
+              <li class="task-controls__item--active"></li>
+            </ul>
+          </li>
+          <li class="task-list__item--done">
+            <p class="task-paragraph--done">Zadanie wykonane</p>
+            <ul class="task-controls">
+              <li class="task-controls__item--done"></li>
+              <li class="task-controls__item--done"></li>
+              <li class="task-controls__item--done"></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </div>
   </body>
 </html>
