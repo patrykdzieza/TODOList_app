@@ -1,26 +1,33 @@
 body {
-    background-color: #fafafa;
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-    height: 100vh;
-    font-family: 'Poppins', sans-serif;
-  }
-  h1 {
-    margin: 0;
-  }
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+h1 {
+  margin: 0;
+}
+
+input {
+  background: none;
+
+  border: none;
+}
+input:focus {
+  outline: none;
+}
+ul,
+li {
+  list-style: none;
+  font-style: normal;
+  margin: 0;
+}
+
+form:focus-within {
   
-  input {
-    background: none;
-  
-    border: none;
-  }
-  input:focus {
-    outline: none;
-  }
-  ul, li{
-    list-style: none;
-    font-style: normal;
-    margin:0;
-  }
-  
+  outline: none;
+  border-radius: 14px;
+  background: rgba(252, 252, 252, 0.9);
+}
