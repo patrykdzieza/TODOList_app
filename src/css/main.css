@@ -104,4 +104,23 @@ form:focus-within {
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
+}
+
+.new-task-container {
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 12px 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 138px;
+  border-radius: 14px;
+  background: rgba(252, 252, 252, 0.7);
+}
+
+.new-task-container:hover {
+  background: rgba(252, 252, 252, 0.9);
 }/*# sourceMappingURL=main.css.map */

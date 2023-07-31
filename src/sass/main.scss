@@ -45,4 +45,17 @@
   font-weight: 400;
 }
 
+.new-task-container {
+  transition: all .2s ease;
+  display: flex;
+  padding: 12px 20px;
+  align-items: center;
+  gap: 138px;
+  border-radius: 14px;
+  background: rgba(252, 252, 252, 0.7);
+}
+
+.new-task-container:hover{
+  background: rgba(252, 252, 252, 0.9);
+}
 
