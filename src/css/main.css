@@ -44,6 +44,12 @@ form:focus-within {
   background: rgba(252, 252, 252, 0.9);
 }
 
+button {
+  border: none;
+  background: none;
+  margin: 0;
+}
+
 .app-container {
   display: -webkit-box;
   display: -ms-flexbox;
