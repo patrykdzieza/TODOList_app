@@ -19,16 +19,27 @@
 .header-container {
   display: flex;
   padding: 40px 120px;
+  padding: 40px;
   flex-direction: column;
-  align-items: center;
-  gap: 20px;
+  align-items: flex-end;
   background: linear-gradient(131deg, #f9b16e 0%, #f68080 100%);
   border-radius: 25px 25px 0px 0px;
 }
 .header {
   display: flex;
+  
   flex-direction: column;
-  align-items: center;
+justify-content: center;
+align-items: center;
+gap: 30px;
+align-self: stretch;
+}
+
+.app-logo{
+  display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 }
 .header-text {
   color: #fafafa;
@@ -44,7 +55,9 @@
   font-style: normal;
   font-weight: 400;
 }
-
+.theme-switch-icon{
+  fill:#F9ABA7;
+}
 .new-task-container {
   transition: all 0.2s ease;
   display: flex;
@@ -74,7 +87,6 @@
   display: flex;
   align-items: center;
   fill: #f78180;
-
 }
 .new-task__add-button:hover {
   fill: #d30d0d;
@@ -126,7 +138,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  margin:0;
+  margin: 0;
   &--done {
     @extend .task-paragraph;
     text-decoration: line-through;
@@ -142,7 +154,7 @@
 
 .task-controls__item {
   fill: #000000;
-  
+
   &--done {
     @extend .task-controls__item;
     fill: #ebebeb;
@@ -152,18 +164,18 @@
   }
 }
 
-.task-done-icon:hover{
-  fill:#44DC41;
+.task-done-icon:hover {
+  fill: #44dc41;
 }
 
-.task-edit-icon:hover{
-  fill:#F9A872;
+.task-edit-icon:hover {
+  fill: #f9a872;
 }
 
-.task-delete-icon:hover{
-  fill:#EA211A;
+.task-delete-icon:hover {
+  fill: #ea211a;
 }
 
-.hidden{
+.hidden {
   display: none;
 }

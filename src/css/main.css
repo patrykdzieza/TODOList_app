@@ -70,14 +70,14 @@ button {
   display: -ms-flexbox;
   display: flex;
   padding: 40px 120px;
+  padding: 40px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 20px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   background: linear-gradient(131deg, #f9b16e 0%, #f68080 100%);
   border-radius: 25px 25px 0px 0px;
 }
@@ -90,6 +90,28 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  -ms-flex-item-align: stretch;
+      align-self: stretch;
+}
+
+.app-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -109,6 +131,10 @@ button {
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
+}
+
+.theme-switch-icon {
+  fill: #F9ABA7;
 }
 
 .new-task-container {
@@ -275,15 +301,15 @@ button {
 }
 
 .task-done-icon:hover {
-  fill: #44DC41;
+  fill: #44dc41;
 }
 
 .task-edit-icon:hover {
-  fill: #F9A872;
+  fill: #f9a872;
 }
 
 .task-delete-icon:hover {
-  fill: #EA211A;
+  fill: #ea211a;
 }
 
 .hidden {

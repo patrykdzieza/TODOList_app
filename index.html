@@ -17,22 +17,29 @@
   <body>
     <div class="app-container">
       <section class="header-container">
+        <i class="theme-switch-icon">
+          <svg width="24px" height="24px">
+            <use href="./assets/icons/icons-sprite.svg#icon-theme-dark"></use>
+          </svg>
+        </i>
         <div class="header">
-          <h1 class="header-text">TODO APP</h1>
-          <span class="header-text--decorative">by Paprika</span>
+          <div class="app-logo">
+            <h1 class="header-text">TODO APP</h1>
+            <span class="header-text--decorative">by Paprika</span>
+          </div>
+          <form class="new-task-container">
+            <input
+              type="text"
+              class="new-task__input-field"
+              placeholder="Wpisz treść swojego zadania"
+            />
+            <button class="new-task__add-button">
+              <svg width="24px" height="24px">
+                <use href="./assets/icons/icons-sprite.svg#icon-add-new-task"></use>
+              </svg>
+            </button>
+          </form>
         </div>
-        <form class="new-task-container">
-          <input
-            type="text"
-            class="new-task__input-field"
-            placeholder="Wpisz treść swojego zadania"
-          />
-          <button class="new-task__add-button">
-            <svg width="24px" height="24px">
-              <use href="./assets/icons/icons-sprite.svg#icon-add-new-task"></use>
-            </svg>
-          </button>
-        </form>
       </section>
       <section class="task-list-container">
         <h1 class="task-list-header">Twoja lista zadań</h1>
@@ -41,21 +48,21 @@
             <p class="task-paragraph">Przykładowe dodane zadanie do wykonania</p>
             <ul class="task-controls">
               <li class="task-controls__item">
-                <button class="task-done-icon">
+                <button class="task-done-button">
                   <svg width="30px" height="30px">
                     <use href="./assets/icons/icons-sprite.svg#icon-done"></use>
                   </svg>
                 </button>
               </li>
               <li class="task-controls__item">
-                <button class="task-edit-icon">
+                <button class="task-edit-button">
                   <svg width="28px" height="28px">
                     <use href="./assets/icons/icons-sprite.svg#icon-text-edit"></use>
                   </svg>
                 </button>
               </li>
               <li class="task-controls__item">
-                <button class="task-delete-icon">
+                <button class="task-delete-button">
                   <svg width="24px" height="24px">
                     <use href="./assets/icons/icons-sprite.svg#icon-delete"></use>
                   </svg>
@@ -120,5 +127,4 @@
     </div>
     <script src="./src/scripts/script.js"></script>
   </body>
-  
 </html>

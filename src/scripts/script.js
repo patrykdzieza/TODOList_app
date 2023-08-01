@@ -2,7 +2,7 @@ let newTaskInput;
 let errorInfo;
 let addNewTaskButton;
 let taskList;
-let task;
+let taskItem;
 let removeTaskButton;
 function main() {
   prepareDOMElements();
@@ -10,11 +10,11 @@ function main() {
 }
 
 function prepareDOMElements() {
-  document.querySelector('.new-task__input-field');
+  newTaskInput = document.querySelector('.new-task__input-field');
   addNewTaskButton = document.querySelector('.new-task__add-button');
-  document.querySelector('ul.task-list');
-  task = document.querySelector('.task-list__item--done');
-  removeTaskButton = document.querySelector('.task-done-icon');
+  taskList = document.querySelector('ul.task-list');
+  task = document.querySelector('.task-list__item');
+  removeTaskButton = document.querySelector('.task-done-buton');
 }
 
 function prepareDOMEvents() {}
@@ -25,3 +25,4 @@ function hidding() {
 
 // removeTaskButton.addEventListener("click", hidding)
 document.addEventListener('DOMContentLoaded', main);
+console.log(removeTaskButton);
