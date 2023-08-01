@@ -78,7 +78,7 @@ button {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  background: linear-gradient(131deg, #f9b16e 0%, #f68080 100%);
+  background: linear-gradient(130deg, #f9b16e 0%, #f68080 100%);
   border-radius: 25px 25px 0px 0px;
 }
 
@@ -300,15 +300,15 @@ button {
   padding-left: 20px;
 }
 
-.task-done-icon:hover {
+.task-done-button:hover {
   fill: #44dc41;
 }
 
-.task-edit-icon:hover {
+.task-edit-button:hover {
   fill: #f9a872;
 }
 
-.task-delete-icon:hover {
+.task-delete-button:hover {
   fill: #ea211a;
 }
 
