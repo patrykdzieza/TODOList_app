@@ -1,3 +1,4 @@
+
 body {
   background-color: #fafafa;
   display: flex;
@@ -12,7 +13,7 @@ h1 {
 
 input {
   background: none;
-
+  font-family: 'Poppins', sans-serif;
   border: none;
 }
 input:focus {
@@ -23,10 +24,10 @@ li {
   list-style: none;
   font-style: normal;
   margin: 0;
+  padding: 0;
 }
 
 form:focus-within {
-  
   outline: none;
   border-radius: 14px;
   background: rgba(252, 252, 252, 0.9);

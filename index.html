@@ -22,27 +22,85 @@
           <span class="header-text--decorative">by Paprika</span>
         </div>
         <form class="new-task-container">
-          <input type="text" class="new-task__input-field" placeholder="Wpisz treść swojego zadania"/>
-          <button class="new-task__add-button">Dodaj</button>
+          <input
+            type="text"
+            class="new-task__input-field"
+            placeholder="Wpisz treść swojego zadania"
+          />
+          <i class="new-task__add-button">
+            <svg width="24px" height="24px">
+              <use href="./assets/icons/icons-sprite.svg#icon-add-new-task"></use>
+            </svg>
+          </i>
         </form>
       </section>
       <section class="task-list-container">
         <h1 class="task-list-header">Twoja lista zadań</h1>
         <ul class="task-list">
-          <li class="task-list__item--active">
-            <p class="task-paragraph--active">Przykładowe dodane zadanie do wykonania</p>
+          <li class="task-list__item">
+            <p class="task-paragraph">Przykładowe dodane zadanie do wykonania</p>
             <ul class="task-controls">
-              <li class="task-controls__item--active"></li>
-              <li class="task-controls__item--active"></li>
-              <li class="task-controls__item--active"></li>
+              <li class="task-controls__item">
+                <i class="task-done-icon">
+                  <svg width="30px" height="30px">
+                    <use href="./assets/icons/icons-sprite.svg#icon-done"></use>
+                  </svg>
+                </i>
+              </li>
+              <li class="task-controls__item">
+                <i class="task-edit-icon">
+                  <svg width="28px" height="28px">
+                    <use href="./assets/icons/icons-sprite.svg#icon-text-edit"></use>
+                  </svg>
+                </i>
+              </li>
+              <li class="task-controls__item">
+                <i class="task-delete-icon">
+                  <svg width="24px" height="24px">
+                    <use href="./assets/icons/icons-sprite.svg#icon-delete"></use>
+                  </svg>
+                </i>
+              </li>
             </ul>
           </li>
-          <li class="task-list__item--done">
+          <li class="task-list__item--done hidden">
             <p class="task-paragraph--done">Zadanie wykonane</p>
             <ul class="task-controls">
-              <li class="task-controls__item--done"></li>
-              <li class="task-controls__item--done"></li>
-              <li class="task-controls__item--done"></li>
+              <li class="task-controls__item--done"><i>
+                <svg width="30px" height="30px">
+                  <use href="./assets/icons/icons-sprite.svg#icon-done"></use>
+                </svg>
+              </i></li>
+              <li class="task-controls__item--done"> <i>
+                <svg width="28px" height="28px">
+                  <use href="./assets/icons/icons-sprite.svg#icon-text-edit"></use>
+                </svg>
+              </i></li>
+              <li class="task-controls__item--done"><i>
+                <svg width="24px" height="24px">
+                  <use href="./assets/icons/icons-sprite.svg#icon-delete"></use>
+                </svg>
+              </i></li>
+            </ul>
+          </li>
+          <li class="task-list__item--done hidden">
+            <p class="task-paragraph--done">Zadanie wykonane</p>
+            <ul class="task-controls">
+              <li class="task-controls__item--done"><i>
+                <svg width="30px" height="30px">
+                  <use href="./assets/icons/icons-sprite.svg#icon-done"></use>
+                </svg>
+              </i></li>
+              <li class="task-controls__item--done"> <i>
+                <svg width="28px" height="28px">
+                  <use href="./assets/icons/icons-sprite.svg#icon-text-edit"></use>
+                </svg>
+              </i></li>
+              <li class="task-controls__item--done"><i>
+                <svg width="24px" height="24px">
+                  <use href="./assets/icons/icons-sprite.svg#icon-delete"></use>
+                </svg>
+              </i></li>
             </ul>
           </li>
         </ul>

@@ -22,6 +22,7 @@ h1 {
 
 input {
   background: none;
+  font-family: "Poppins", sans-serif;
   border: none;
 }
 
@@ -34,6 +35,7 @@ li {
   list-style: none;
   font-style: normal;
   margin: 0;
+  padding: 0;
 }
 
 form:focus-within {
@@ -50,9 +52,6 @@ form:focus-within {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   gap: 40px;
   border-radius: 25px;
   background: #fbfbfb;
@@ -112,15 +111,175 @@ form:focus-within {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 12px 20px;
+  padding: 15px 20px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 138px;
+  gap: 250px;
   border-radius: 14px;
   background: rgba(252, 252, 252, 0.7);
 }
 
 .new-task-container:hover {
   background: rgba(252, 252, 252, 0.9);
+}
+
+.new-task__input-field {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.new-task__input-field::-webkit-input-placeholder {
+  color: #747474;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.new-task__input-field::-moz-placeholder {
+  color: #747474;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.new-task__input-field:-ms-input-placeholder {
+  color: #747474;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.new-task__input-field::-ms-input-placeholder {
+  color: #747474;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.new-task__input-field::placeholder {
+  color: #747474;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.new-task__add-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  fill: #f78180;
+}
+
+.new-task__add-button:hover {
+  fill: #d30d0d;
+}
+
+.task-list-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0px 80px 40px 80px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+.task-list-header {
+  color: #646464;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.task-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+
+.task-list__item, .task-list__item--done {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 200px;
+  border-radius: 16px;
+  background: #fff;
+  -webkit-box-shadow: 0px 0.5985091925px 2.3940367699px 0px rgba(0, 0, 0, 0.01), 0px 2.0102677345px 8.0410709381px 0px rgba(0, 0, 0, 0.02), 0px 9px 36px 0px rgba(0, 0, 0, 0.03);
+          box-shadow: 0px 0.5985091925px 2.3940367699px 0px rgba(0, 0, 0, 0.01), 0px 2.0102677345px 8.0410709381px 0px rgba(0, 0, 0, 0.02), 0px 9px 36px 0px rgba(0, 0, 0, 0.03);
+}
+.task-list__item--done {
+  background: #fafafa;
+}
+
+.task-paragraph, .task-paragraph--done {
+  color: #424242;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+.task-paragraph--done {
+  text-decoration: line-through;
+  color: #ebebeb;
+}
+
+.task-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 18px;
+}
+
+.task-controls__item, .task-controls__item--done {
+  fill: #000000;
+}
+.task-controls__item--done {
+  fill: #ebebeb;
+}
+.task-controls__item:last-child, .task-controls__item--done:last-child {
+  padding-left: 20px;
+}
+
+.task-done-icon:hover {
+  fill: #44DC41;
+}
+
+.task-edit-icon:hover {
+  fill: #F9A872;
+}
+
+.task-delete-icon:hover {
+  fill: #EA211A;
+}
+
+.hidden {
+  display: none;
 }/*# sourceMappingURL=main.css.map */
