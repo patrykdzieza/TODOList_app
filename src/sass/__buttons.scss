@@ -1,0 +1,43 @@
+.theme-switch-button {
+  transition: fill 0.3s ease;
+  fill: rgba(255, 255, 255, 0.4);
+
+  &:hover {
+    fill: rgba(255, 255, 255, 0.9);
+  }
+}
+
+.new-task__add-button {
+  fill: #f78180;
+  &:hover {
+    fill: #d30d0d;
+  }
+  &--dark-theme {
+    fill: #dce0fd;
+  }
+}
+
+.task-button {
+  fill: #000000;
+
+  &--done:hover {
+    transition: fill 0.2s ease;
+
+    fill: #44dc41;
+  }
+
+  &--edit:hover {
+    transition: fill 0.2s ease;
+    fill: #f9a872;
+  }
+
+  &--delete:hover {
+    transition: fill 0.2s ease;
+    fill: #ea211a;
+  }
+}
+
+.task-button--dark-theme {
+ 
+  fill: #f3f3f3;
+}

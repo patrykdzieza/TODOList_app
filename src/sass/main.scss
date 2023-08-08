@@ -3,9 +3,10 @@
 @use './_buttons';
 
 .app-container {
+  transition: all 0.6s ease;
   display: flex;
   flex-direction: column;
-  // align-items: flex-start;
+  
   gap: 40px;
   border-radius: 25px;
   background: #fbfbfb;
@@ -15,6 +16,11 @@
     0px 33.28110122680664px 52.93705368041992px 0px rgba(0, 0, 0, 0.04),
     0px 62.24863815307617px 99.01293182373047px 0px rgba(0, 0, 0, 0.05),
     0px 149px 237px 0px rgba(0, 0, 0, 0.07);
+  &--dark-theme {
+    @extend .app-container;
+    transition: background 0.6s ease;
+    background: #464a62;
+  }
 }
 .header-container {
   display: flex;
@@ -22,24 +28,31 @@
   padding: 40px;
   flex-direction: column;
   align-items: flex-end;
+
   background: linear-gradient(130deg, #f9b16e 0%, #f68080 100%);
   border-radius: 25px 25px 0px 0px;
-}
-.header {
-  display: flex;
-  
-  flex-direction: column;
-justify-content: center;
-align-items: center;
-gap: 30px;
-align-self: stretch;
+
+  &--dark-theme {
+    @extend .header-container;
+    background: linear-gradient(135deg, rgba(98, 116, 231, 0.7) 0%, rgba(135, 82, 163, 0.7) 100%);
+  }
 }
 
-.app-logo{
+.header {
   display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  align-self: stretch;
+}
+
+.app-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .header-text {
   color: #fafafa;
@@ -55,44 +68,54 @@ align-items: center;
   font-style: normal;
   font-weight: 400;
 }
-.theme-switch-icon{
-  fill:#F9ABA7;
-}
+
 .new-task-container {
-  transition: all 0.2s ease;
+  transition: background 0.2s ease;
   display: flex;
   padding: 15px 20px;
   align-items: center;
   gap: 250px;
   border-radius: 14px;
   background: rgba(252, 252, 252, 0.7);
-}
 
-.new-task-container:hover {
-  background: rgba(252, 252, 252, 0.9);
-}
+  &:hover {
+    transition: background 0.2s ease;
+    background: rgba(252, 252, 252, 0.9);
+  }
+  
+  &--dark-theme {
+    transition: background 0.5s ease;
+    background: rgba(70, 74, 98, 0.55);
 
+    &:hover {
+      transition: background 0.5s ease;
+      background: rgba(220, 224, 253, 0.2);
+    }
+  }
+}
+.input-error{
+  @extend .new-task-container;
+  border: 2px solid #FF3C3C;
+}
 .new-task__input-field {
   font-size: 14px;
   font-weight: 400;
 }
 .new-task__input-field::placeholder {
+  transition: color 0.5s ease;
   color: #747474;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
 }
 
-.new-task__add-button {
-  display: flex;
-  align-items: center;
-  fill: #f78180;
-}
-.new-task__add-button:hover {
-  fill: #d30d0d;
+.new-task__input-field--dark-theme::placeholder {
+  transition: color 0.5s ease;
+  color: #dadce9;
 }
 
 .task-list-container {
+  transition: all 0.6s ease;
   display: flex;
   padding: 0px 80px 40px 80px;
   flex-direction: column;
@@ -111,11 +134,12 @@ align-items: center;
 .task-list {
   display: flex;
   flex-direction: column;
-
+  align-self: stretch;
   gap: 20px;
 }
 .task-list__item {
   display: flex;
+  width: 100%;
   padding: 15px 30px;
   align-items: center;
   justify-content: space-between;
@@ -126,9 +150,21 @@ align-items: center;
     0px 2.010267734527588px 8.041070938110352px 0px rgba(0, 0, 0, 0.02),
     0px 9px 36px 0px rgba(0, 0, 0, 0.03);
 
-  &--done {
-    @extend .task-list__item;
-    background: #fafafa;
+  &--dark-theme {
+    background:  #35384A;
+    box-shadow: 0px 0.5985091924667358px 2.3940367698669434px 0px rgba(0, 0, 0, 0.01),
+      0px 2.010267734527588px 8.041070938110352px 0px rgba(0, 0, 0, 0.02),
+      0px 9px 36px 0px rgba(0, 0, 0, 0.03);
+  }
+}
+
+.task-list__item--done {
+  @extend .task-list__item;
+  background: #fafafa;
+
+  &--dark-theme {
+    background: #3d3f51;
+    
   }
 }
 
@@ -139,6 +175,7 @@ align-items: center;
   font-weight: 400;
   line-height: normal;
   margin: 0;
+
   &--done {
     @extend .task-paragraph;
     text-decoration: line-through;
@@ -146,10 +183,12 @@ align-items: center;
   }
 }
 
+
+
 .task-controls {
   display: flex;
   align-items: center;
-  gap: 18px;
+  gap: 10px;
 }
 
 .task-controls__item {
@@ -164,18 +203,10 @@ align-items: center;
   }
 }
 
-.task-done-button:hover {
-  fill: #44dc41;
-}
-
-.task-edit-button:hover {
-  fill: #f9a872;
-}
-
-.task-delete-button:hover {
-  fill: #ea211a;
-}
-
 .hidden {
   display: none;
+}
+
+.dark-theme-text{
+  color:#DADCE9
 }

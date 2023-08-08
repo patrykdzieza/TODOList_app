@@ -10,18 +10,19 @@
       integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
       crossorigin="anonymous"
     />
-
     <link rel="stylesheet" href="./src/css/main.min.css" />
+  
   </head>
 
-  <body>
+  <body class="light-theme">
     <div class="app-container">
       <section class="header-container">
-        <i class="theme-switch-icon">
+        <button class="theme-switch-button">
           <svg width="24px" height="24px">
             <use href="./assets/icons/icons-sprite.svg#icon-theme-dark"></use>
           </svg>
-        </i>
+        </button>
+       
         <div class="header">
           <div class="app-logo">
             <h1 class="header-text">TODO APP</h1>
@@ -43,26 +44,26 @@
       </section>
       <section class="task-list-container">
         <h1 class="task-list-header">Twoja lista zadań</h1>
-        <ul class="task-list">
-          <li class="task-list__item">
+       <ul class="task-list">
+           <li class="task-list__item">
             <p class="task-paragraph">Przykładowe dodane zadanie do wykonania</p>
             <ul class="task-controls">
               <li class="task-controls__item">
-                <button class="task-done-button">
+                <button class="task-button--done">
                   <svg width="30px" height="30px">
                     <use href="./assets/icons/icons-sprite.svg#icon-done"></use>
                   </svg>
                 </button>
               </li>
               <li class="task-controls__item">
-                <button class="task-edit-button">
+                <button class="task-button--edit">
                   <svg width="28px" height="28px">
                     <use href="./assets/icons/icons-sprite.svg#icon-text-edit"></use>
                   </svg>
                 </button>
               </li>
               <li class="task-controls__item">
-                <button class="task-delete-button">
+                <button class="task-button--delete">
                   <svg width="24px" height="24px">
                     <use href="./assets/icons/icons-sprite.svg#icon-delete"></use>
                   </svg>
@@ -125,6 +126,6 @@
         </ul>
       </section>
     </div>
-    <script src="./src/scripts/script.js"></script>
+    <script defer src="./src/scripts/script.js"></script>
   </body>
 </html>

@@ -1,11 +1,18 @@
-
 body {
-  background-color: #fafafa;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
   font-family: 'Poppins', sans-serif;
+}
+
+.light-theme {
+  transition: background 0.7s ease;
+  background-color: #fafafa;
+}
+.dark-theme{
+  transition: background 0.7s ease;
+  background: #383C54;
 }
 h1 {
   margin: 0;
@@ -30,11 +37,12 @@ li {
 form:focus-within {
   outline: none;
   border-radius: 14px;
-  background: rgba(252, 252, 252, 0.9);
+  background: rgba(252, 252, 252, 0.7);
 }
 
-button{
+button {
   border: none;
   background: none;
   margin: 0;
+  padding: 0;
 }
